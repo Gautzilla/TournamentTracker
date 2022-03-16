@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TrackerLibrary.DataAccess;
 
 namespace TrackerLibrary
 {
@@ -15,14 +16,14 @@ namespace TrackerLibrary
             if (database)
             {
                 // TODO - Set up the SQL Connector properly
-                SqlConnection sql = new();
+                SqlConnector sql = new();
                 Connections.Add(sql);
             }
 
             if (textFiles)
             {
                 // TODO - Set up the Text Connector properly
-                TextConnection text = new();
+                TextConnector text = new();
                 Connections.Add(text);
             }
         }
