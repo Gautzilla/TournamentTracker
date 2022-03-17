@@ -24,7 +24,7 @@ namespace TrackerUI
         {
             if (ValidateForm())
             {
-                PrizeModel model = new(
+                PrizeModel model = new PrizeModel(
                     placeNameValue.Text, 
                     placeNumberValue.Text, 
                     prizeAmountValue.Text, 

@@ -19,14 +19,14 @@ namespace TrackerLibrary.Models
         /// <summary>
         /// Represents all the teams that entered the tournament.
         /// </summary>
-        public List<TeamModel> EnteredTeams { get; set; } = new();
+        public List<TeamModel> EnteredTeams { get; set; } = new List<TeamModel>();
         /// <summary>
         /// Represent the prizes that are given at the end of the tournament.
         /// </summary>
-        public List<PrizeModel> Prizes { get; set; } = new();
+        public List<PrizeModel> Prizes { get; set; } = new List<PrizeModel>();
         /// <summary>
         /// Represent all the rounds of the tournament.
         /// </summary>
-        public List<List<MatchupModel>> Rounds { get; set; } = new();
+        public List<List<MatchupModel>> Rounds { get; set; } = new List<List<MatchupModel>>();
     }
 }

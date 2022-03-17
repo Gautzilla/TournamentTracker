@@ -14,7 +14,7 @@ namespace TrackerLibrary.Models
         /// <summary>
         /// The two teams competing in this match.
         /// </summary>
-        public List<MatchupEntryModel> Entries { get; set; } = new();
+        public List<MatchupEntryModel> Entries { get; set; } = new List<MatchupEntryModel>();
         /// <summary>
         /// The winner of the match.
         /// </summary>
